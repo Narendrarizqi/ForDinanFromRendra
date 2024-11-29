@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HBD CANTIIIKK!!!</title>
+    <style>
+		@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+		@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+		body {
+			font-family: 'Indie Flower', cursive !important;
+		background: #fad6f2; /*CAPE HONEY*/
+			margin: 0px;
+			padding: 0px;
+		}
+
+		::selection {
+			background: transparent;
+		}
+
+		h4 {
+			font-size: 26px;
+			line-height: 1px;
+			font-family: 'Amatic SC', cursive !important;
+		}
+
+		.color1{color:#1BBC9B; font-size: medium;}/*MOUNTAIN MEADOW*/
+		.color2{color:#C0392B}
+
+
+		.card {
+			color: #013243; 
+			position: absolute;
+			top: 50%;
+			left: 20%;
+			width: 300px;
+			height: 400px;
+			background: #e0e1dc;
+			transform-style: preserve-3d;
+			transform: translate(-50%,-50%) perspective(2000px);
+			box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
+			transition: 1s;
+		}
+		.card1 {
+			color: #013243; /*SHERPA BLUE*/
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 300px;
+			height: 400px;
+			background: #e0e1dc;
+			transform-style: preserve-3d;
+			transform: translate(-50%,-50%) perspective(2000px);
+			box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
+			transition: 1s;
+		}
+		.card2 {
+			color: #013243; /*SHERPA BLUE*/
+			position: absolute;
+			top: 50%;
+			left: 80%;
+			width: 300px;
+			height: 400px;
+			background: #e0e1dc;
+			transform-style: preserve-3d;
+			transform: translate(-50%,-50%) perspective(2000px);
+			box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
+			transition: 1s;
+		}
+
+		.card:hover {
+			transform: translate(-50%,-50%) perspective(2000px) rotate(3deg) scale(1.2);
+			box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+		}
+		.card1:hover {
+			transform: translate(-50%,-50%) perspective(2000px) rotate(3deg) scale(1.2);
+			box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+		}
+		.card2:hover {
+			transform: translate(-50%,-50%) perspective(2000px) rotate(3deg) scale(1.2);
+			box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+		}
+
+		.card:before {
+			content:'';
+			position: absolute;
+			top: -5px;
+			left: 0;
+			width: 100%;
+			height: 5px;
+			background: #BAC1BA;
+			transform-origin: bottom;
+		}
+		.card1:before {
+			content:'';
+			position: absolute;
+			top: -5px;
+			left: 0;
+			width: 100%;
+			height: 5px;
+			background: #BAC1BA;
+			transform-origin: bottom;
+		}
+		.card2:before {
+			content:'';
+			position: absolute;
+			top: -5px;
+			left: 0;
+			width: 100%;
+			height: 5px;
+			background: #BAC1BA;
+			transform-origin: bottom;
+		}
+
+		.card:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -5px;
+			width: 5px;
+			height: 100%;
+			background: #92A29C;
+			transform-origin: left;
+		}
+		.card1:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -5px;
+			width: 5px;
+			height: 100%;
+			background: #92A29C;
+			transform-origin: left;
+		}
+		.card2:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -5px;
+			width: 5px;
+			height: 100%;
+			background: #3f4744;
+			transform-origin: left;
+		}
+
+		.card .imgBox {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			transform-origin: left;
+			transition: .7s;
+		}
+		.card1 .imgBox {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			transform-origin: left;
+			transition: .7s;
+		}
+		.card2 .imgBox {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			transform-origin: left;
+			transition: .7s;
+		}
+
+		.card .bark {
+			position: absolute;
+			background-image: "background.jpg";
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: .7s;
+		}
+		.card1 .bark {
+			position: absolute;
+			background-image: "background.jpg";
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: .7s;
+		}
+		.card2 .bark {
+			position: absolute;
+			background-image: "background.jpg";
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: .7s;
+		}
+
+		.card .imgBox img {
+			min-width: 250px;
+			max-height: 400px;
+			width:300px;
+		}
+		.card1 .imgBox img {
+			min-width: 250px;
+			max-height: 400px;
+			width:300px;
+		}
+		.card2 .imgBox img {
+			min-width: 250px;
+			max-height: 400px;
+			width:300px;
+		}
+
+		.card:hover .imgBox {
+			transform: rotateY(-135deg);
+		}
+		.card1:hover .imgBox {
+			transform: rotateY(-135deg);
+		}
+		.card2:hover .imgBox {
+			transform: rotateY(-135deg);
+		}
+
+		.card:hover .bark {
+			opacity: 1;
+			transition: .6s;
+		box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+		}
+		.card1:hover .bark {
+			opacity: 1;
+			transition: .6s;
+		box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+		}
+		.card2:hover .bark {
+			opacity: 1;
+			transition: .6s;
+		box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+		}
+
+		.card .details {
+			position: absolute;
+			top: 0;
+			left: 0;
+			box-sizing: border-box;
+			padding: 0 0 0 10px;
+			z-index: -1;
+			margin-top: 0px;
+			margin-left: 10px;
+		}
+		.card1 .details {
+			position: absolute;
+			top: 0;
+			left: 0;
+			box-sizing: border-box;
+			padding: 0 0 0 10px;
+			z-index: -1;
+			margin-top: 0px;
+			margin-left: 10px;
+		}
+		.card2 .details {
+			position: absolute;
+			top: 0;
+			left: 0;
+			box-sizing: border-box;
+			padding: 0 0 0 10px;
+			z-index: -1;
+			margin-top: 0px;
+			margin-left: 10px;
+		}
+
+		.card .details p {
+			font-size: 11px;
+			line-height: 4px;
+			transform: rotate(0deg);
+			padding: 0 0 0 0;
+			
+		}
+		.card1 .details p {
+			font-size: 11px;
+			line-height: 4px;
+			transform: rotate(0deg);
+			padding: 0 0 0 0;
+			
+		}
+		.card2 .details p {
+			font-size: 11px;
+			line-height: 4px;
+			transform: rotate(0deg);
+			padding: 0 0 0 0;
+			
+		}
+
+		.card .details h4 {
+			text-align: center;
+			margin-top: 30px;
+		}
+		.card1 .details h4 {
+			text-align: center;
+			margin-top: 30px;
+		}
+		.card2 .details h4 {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.text-right {
+			text-align: right;
+		}
+    </style>
+</head>
+
+<body>
+
+    <div class="card"> 
+        <div class="imgBox">
+            <div class="bark"></div>
+            <img src="background.jpg">
+        </div>
+        <div class="details" >
+            <h4 class="color2">SELAMAT ULANG TAHUN CANTIK </h4>
+            <h4 class="color1">💖💖💖💖💖</h4>
+            <p>First of al'l selamat ulang tahun yang ke 20thn sayang</p>
+            <p>Semoga ditahun ini kamu bisa dapetin apa yang kamu mau,</p>
+            <p>dapet IPS cakep, sesuai sama usaha kamu, bisa betah </p>
+            <p>kuliah dengan segala sifat random  dari orang-orang yang </p>
+            <p>sebelumnya ga pernah kamu liat dan bayangin. Semoga bisa</p>
+            <p>survive salam 4 tahun , sehat selalu walau jarang makan</p>
+            <p>sayur, dan masih banyak lagi doa dariku yg gabisa kusebut.</p>
+			<p>.</p>
+			<p>Aku juga makasih kekamu masih bisa betah sama aku</p>
+            <p>betah dengan semua keterbatasan selama diPurwokerto.</p>
+            <p>walau aku jarang ajak kamu ke tempat kaya awal kita kenal</p>
+            <p>Makasih udah bisa sabar kalo ku usilin, walau ujungnya</p>
+            <p>bete tapi tetep akhirnya dimaafin HAHAHA. Makasih udah</p>
+            <p>masakin buat aku, perhatian keaku, nasehatin, support.</p>
+            <p>Makasih buat semuanya. Karena kamu aku jadi tau </p>
+            <p>makanan enak, baju cakep, dan yang paling penting aku bisa</p>
+            <p>ngerasa lebih pd. Makasih buat semuanya, pastinya banyak</p>
+            <p>yang belum kusebutin. Jangan pernah lagi ngerasa hari ulang</p>
+            <p>tahunmu hari yang jelek ya, bagi aku 1 desember itu hari</p>
+            <p>cewe cantik lahir dan bertambah umur, jadi ini hari spesial</p>
+			
+            <p class="text-right">LANJUT==></p>
+
+        </div>
+        </div>
+    </div>
+	<div class="card1">
+        <div class="imgBox">
+            <div class="bark"></div>
+            <img src="background.jpg">
+        </div>
+        <div class="details"> <p>Baca buku kiri dulu</p>
+			<br>
+			<p>Jangan pernah ngerasa down karna kondisi kamu saat ini</p>
+            <p>Mau kya gimanapun, percaya ga percaya Aku selalu </p>
+            <p>liat kamu itu:</p>
+            <p>1. CA.NTIK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				11. G.ALAK</p>
+            <p>2. ESTETIK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				12. CENGENG</p>
+            <p>3. BA.IIK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+				13. CEMBURUAN</p>
+            <p>4. PINTER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				14. MOOD SWING</p>
+            <p>5. KREATIF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				15. CLUMSY</p>
+            <p>6. PEMALU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				16. PELUPA</p>
+            <p>7. BUCIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				17. PENAKUT</p>
+            <p>8. ROY,,AL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				18. G,AMPANG DITIPU</p>
+            <p>9. PEMAAF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				19. BAPERAN</p>
+            <p>10. PENUH EMPATI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				20. PA.N.IIKAN</p>
+            <p>Selain itu, aku juga mau minta maaf klo banyak hal</p>
+            <p>yang kamu ga suka dari aku, ga suka sifat aku, ga suka</p>
+            <p>cara aku marah, cara treat aku, sering usil, dan banyak</p>
+            <p>lagi yang ga bisa kusebutin 1 per 1. Semoga kamu bisa</p>
+            <p>betah sama aku ya, kasih tau mana yang perlu aku ubah</p>
+            <p>I love U💕. Be the main character in my story </p>
+            <p>I hope u remain the same dinan as I know u</p>
+            <p class="text-right">ur handsome boyfriend</p>
+            <p class="text-right">Narendra</p>
+        </div>
+        </div>
+    </div>
+    
+	<div class="card2">
+        <div class="imgBox">
+            <div class="bark"></div>
+            <img src="bukan kopi.png">
+        </div>
+		<div class="details"> 
+			<h4 class="color2">LIRIK LAGU</h4>
+			<p>Hey, have you ever tried</p>
+			<p>Really reaching out for the other side?</p>
+			<p>I may be climbing on rainbows</p>
+			<p>But, baby, here goes</p>
+			<p>Dreams, they're for those who sleep</p>
+			<p>Life is for us to keep</p>
+			<p>And if you're wondering what this song is leading to</p>
+			<p>I wanna make it with you</p>
+			<p>I really think that we could make it, girl</p>
+			<p>No, you don't know me well</p>
+			<p>And every little thing, only time will tell</p>
+			<p>If you believe the things that I do</p>
+			<p>And we'll see it through</p>
+			<p>Life can be short or long</p>
+			<p>Love can be right or wrong</p>
+			<p>And if I chose the one I'd like to help me through</p>
+			<p>I'd like to make it with you</p>
+			<p>I really think that we could make it, girl</p>
+			<p>Baby, you know that dreams they're for those who sleep</p>
+			<p>Life, it's for us to keep</p>
+			<p>And if I chose the one I'd like to help me through</p>
+			<p>I'd like to make it with you</p>
+			<p>I really think that we could make it, girl</p>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
